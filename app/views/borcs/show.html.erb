@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Borçlu:</b>
+  <%= @borc.Borclu %>
+</p>
+
+<p>
+  <b>Miktar:</b>
+  <%= @borc.Miktar %>
+</p>
+
+<p>
+  <b>Notlar:</b>
+  <%= @borc.Notlar %>
+</p>
+
+
+<%= link_to 'Düzenle', edit_borc_path(@borc) %> |
+<%= link_to 'Geri', borcs_path %>

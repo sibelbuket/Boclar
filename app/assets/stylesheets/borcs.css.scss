@@ -1,0 +1,102 @@
+BODY
+{
+	width: 700px;
+	margin: 15px auto 0;
+	border: 1px solid #D2D2D2;
+	padding: 3px;
+}
+.borclistesi
+{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #F4F4F4;
+}
+.header
+{
+	background-color: #E9CCF3;
+	padding-top: 8px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.header H1
+{
+	/*+text-shadow:0px 0px 5px #AC39BC;*/
+	-moz-text-shadow: 0px 0px 5px #AC39BC;
+	-webkit-text-shadow: 0px 0px 5px #AC39BC;
+	-o-text-shadow: 0px 0px 5px #AC39BC;
+	text-shadow: 0px 0px 5px #AC39BC;
+	color: #FFFFFF;
+}
+.header .loginDurum
+{
+	position: absolute;
+	margin-top: -7px;
+	margin-left: 6px;
+}
+.header .twitter
+{
+	margin-top: 35px;
+}
+.header .twitter A:hover
+{
+	background-color: inherit;
+}
+.header .twitter A:hover IMG
+{
+	/*+box-shadow:0px 0px 15px #55C3D8;*/
+	-moz-box-shadow: 0px 0px 15px #55C3D8;
+	-webkit-box-shadow: 0px 0px 15px #55C3D8;
+	-o-box-shadow: 0px 0px 15px #55C3D8;
+	box-shadow: 0px 0px 15px #55C3D8;
+}
+.header .yeniBorcButon
+{
+	position: absolute;
+	margin-top: -5px;
+	margin-left: 589px;
+}
+.header A
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #774A86;
+}
+.header A:hover
+{
+	background-color: inherit;
+	color: #A568B9;
+}
+.borclistesi .bos
+{
+	width: 70px;
+}
+.borclistesi THEAD TH
+{
+	text-align: left;
+}
+.borclistesi TH
+{
+	padding: 5px;
+	margin: 0px;
+}
+.borclistesi TBODY TR:nth-child(odd)
+{
+	background-color: #E4E4E4;
+}
+.borclistesi TD
+{
+	padding: 5px;
+}
+.borclistesi A
+{
+	background: #E9CCF3;
+	text-decoration: none;
+	padding: 2px 4px;
+	border: 1px solid #D294E7;
+}
+.borclistesi A:hover
+{
+	background: #843B9D;
+	text-decoration: none;
+	color: #FFFFFF;
+}

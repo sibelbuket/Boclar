@@ -1,0 +1,30 @@
+<%= form_for(@borc) do |f| %>
+  <% if @borc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@borc.errors.count, "error") %> prohibited this borc from being saved:</h2>
+
+      <ul>
+      <% @borc.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Borçlu %><br />
+    <%= f.text_field :Borclu %>
+  </div>
+  <div class="field">
+    <%= f.label :Miktar %><br />
+    <%= f.number_field :Miktar %>
+  </div>
+  <div class="field">
+    <%= f.label :Notlar %><br />
+    <%= f.text_area :Notlar %>
+  </div>
+  <div class="actions">
+    <%= f.hidden_field(:UyeId, {:value => @uyeid}) %> <br/>
+    <%= f.submit({:value => "Kaydet"}) %>
+  </div>
+<% end %>

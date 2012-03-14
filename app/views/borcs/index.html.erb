@@ -1,0 +1,42 @@
+<div class='header'>
+<h1>Borçlar</h1>
+
+<div class='loginDurum'>
+  <% if current_user %>
+    Hoşgeldin <%= @username %>!
+    <%= link_to "Çıkış", signout_path %>
+  <% else %>
+    <%= link_to "Twitter ile Giriş Yap", "/auth/twitter" %>
+  <% end %>
+</div>
+
+<div class='yeniBorcButon'><%= link_to 'Yeni Borç Ekle', new_borc_path %></div>
+</div>
+
+<div class='content'>
+  <table class='borclistesi'>
+    <thead>
+      <tr>
+        <th>Borclu</th>
+        <th>Miktar</th>
+        <th>Notlar</th>
+        <th class='bos'></th>
+        <th class='bos'></th>
+        <th class='bos'></th>
+      </tr>
+    </thead>
+
+    <tbody>
+    <% @borcs.each do |borc| %>
+      <tr>
+        <td><%= borc.Borclu %></td>
+        <td><%= borc.Miktar %> TL</td>
+        <td><%= borc.Notlar %></td>
+        <td><%= link_to 'Göster', borc %></td>
+        <td><%= link_to 'Düzenle', edit_borc_path(borc) %></td>
+        <td><%= link_to 'Borcu Sil', borc, confirm: 'Are you sure?', method: :delete %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
